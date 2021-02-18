@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  hello:
+    image: python:3.9.1-alpine
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - NICKNAME=${NICKNAME}
